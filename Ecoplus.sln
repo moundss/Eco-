@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecoplus", "Ecoplus\Ecoplus.csproj", "{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C32D9E57-DC49-4C37-ADB0-6E7AE1884518}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{2657B14D-C42E-4B65-933F-35A7D2E139DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4305A014-CCF4-44FA-B92E-E0FCCC7CB6CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DepResolution", "DepResolution", "{ADBA4CCD-1491-45B9-A1BD-7A5816611774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecoplus.domain.core", "Ecoplus.domain.core\Ecoplus.domain.core.csproj", "{9391F7D8-177F-4B67-AA79-8F595A393986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9391F7D8-177F-4B67-AA79-8F595A393986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9391F7D8-177F-4B67-AA79-8F595A393986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9391F7D8-177F-4B67-AA79-8F595A393986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9391F7D8-177F-4B67-AA79-8F595A393986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{673968DC-FC8B-45D2-8F4D-4C96B1C5F37A} = {2657B14D-C42E-4B65-933F-35A7D2E139DE}
+		{9391F7D8-177F-4B67-AA79-8F595A393986} = {C32D9E57-DC49-4C37-ADB0-6E7AE1884518}
+	EndGlobalSection
+EndGlobal
