@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="25833ab2-b40f-49b7-954e-cba653a899fc" ChangeDateTime="10/06/2017 09:11:13">
+    <Property Name="ElementName" Value="[dbo].[Depots].[Qte Stocke]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Depots]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Qte_Stocke" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="96110b9a-9a1d-4d16-8d4d-a8b9ef40dfe6" ChangeDateTime="10/06/2017 09:11:18">
+    <Property Name="ElementName" Value="[dbo].[Depots].[Qte Limite]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Depots]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Qte_Limite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3de3860-2128-43db-95bb-d79b8e208daf" ChangeDateTime="10/06/2017 09:12:52">
+    <Property Name="ElementName" Value="[dbo].[Exploitants].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Exploitants]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Exploitant" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f4d54fe8-8e26-4134-a5ac-459897fefa55" ChangeDateTime="10/06/2017 09:15:53">
+    <Property Name="ElementName" Value="[dbo].[Depots].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Depots]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdDepot" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="064171fc-1e05-4245-a65e-53d7e9fa2c36" ChangeDateTime="10/06/2017 09:16:48">
+    <Property Name="ElementName" Value="[dbo].[Distribuer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Distribuer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdDistribuer" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b65f6e04-064a-4927-b5c7-c1a17945d1e7" ChangeDateTime="10/06/2017 09:18:37">
+    <Property Name="ElementName" Value="[dbo].[Distribuer].[Qte_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Distribuer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Date_distribuer" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ff4a06c6-5b6b-46b5-9227-640acb638679" ChangeDateTime="10/06/2017 09:21:05">
+    <Property Name="ElementName" Value="[dbo].[Distribuer].[id_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Distribuer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_depot" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0d68e3e4-04ad-4afe-9875-c8aae56dd3a9" ChangeDateTime="10/08/2017 17:41:05">
+    <Property Name="ElementName" Value="[dbo].[Exploitants].[DateEnreg]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Exploitants]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DateModif" />
+  </Operation>
+</Operations>

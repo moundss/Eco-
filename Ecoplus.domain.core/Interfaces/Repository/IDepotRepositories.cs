@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Ecoplus.domain.core.Aggregats;
 using Ecoplus.domain.core.Dtos;
 
 namespace Ecoplus.domain.core.Interfaces.Repository
@@ -9,7 +10,7 @@ namespace Ecoplus.domain.core.Interfaces.Repository
         //lister Dépots
         List<IEnumerable<DepotDtos>> Listedepot();
         //Enregistrer Dépots
-        Task<bool> Enregistrer();
+        Task<bool> Enregistrer(Depot mondepot);
         //Modifier dépots
         Task<bool> Modifier();
         //Supprimer Dépots

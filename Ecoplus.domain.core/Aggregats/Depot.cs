@@ -1,34 +1,41 @@
-﻿namespace Ecoplus.domain.core.Aggregats
+﻿using System;
+
+namespace Ecoplus.domain.core.Aggregats
 {
-    internal class Depot
+    public class Depot
     {
         //public void Supprimer(int id, Depot monDepot)
         //{
         //    if (id!=monDepot.Id)return;
 
         //}
-        public Depot(int id, string libelle, float qte)
+        public Depot(Guid id, string libelle, float qte, float qteLimit, string localisation)
         {
             Id = id;
             Libelle = libelle;
             Qte = qte;
+            Qtelimit = qteLimit;
+            Localisation = localisation;
         }
 
-        public int Id { get; }
+        public Guid Id { get; private set; }
         public string Libelle { get; private set; }
         public float Qte { get; private set; }
-
-        public Depot Ajout(int id, string libelle, float qte)
+        public float Qtelimit { get;private set; }
+        public string Localisation { get; private set; }
+        public Depot Ajout(Guid id, string libelle, float qte, float qteLimit, string localisation)
         {
-            return new Depot(id, libelle, qte);
+            return new Depot (id,libelle, qte, Qtelimit, Localisation);
         }
 
-        public void Modifier(int id, Depot monDepot)
+        public void Modifier(Guid id, Depot monDepot)
         {
             if (id != monDepot.Id) return;
 
             Libelle = monDepot.Libelle;
             Qte = monDepot.Qte;
+            Qtelimit = monDepot.Qtelimit;
+            Localisation = monDepot.Localisation;
         }
     }
 }
