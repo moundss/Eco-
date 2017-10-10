@@ -67,6 +67,15 @@
     <Build Include="Procedures stockees\Insert_depots.sql" />
     <Build Include="Procedures stockees\Insert_exploitants.sql" />
     <Build Include="Procedures stockees\Insert_distribution.sql" />
+    <Build Include="Procedures stockees\Select_exploitants.sql" />
+    <Build Include="Procedures stockees\Select_depots.sql" />
+    <Build Include="Procedures stockees\Select_distribution.sql" />
+    <Build Include="Procedures stockees\Update_exploitants.sql" />
+    <Build Include="Procedures stockees\Delete_exploitants.sql" />
+    <Build Include="Procedures stockees\Update_depots.sql" />
+    <Build Include="Procedures stockees\Delete_depots.sql" />
+    <Build Include="Procedures stockees\Update_Distribution.sql" />
+    <Build Include="Procedures stockees\Delete_Distribution.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DbEcoplus.refactorlog" />

@@ -2,7 +2,7 @@
 
 namespace Ecoplus.domain.core.Aggregats
 {
-    internal class Distribuer
+    public class Distribuer
     {
         public Distribuer(Guid id, DateTime datedistribuee, float qteDistribuee, int idExploitant, int idDepot)
         {

@@ -16,5 +16,18 @@ namespace Ecoplustest.Feuilles
         {
             InitializeComponent();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            var details =new Depots_details();
+
+            details.ShowDialog();
+
+        }
     }
 }

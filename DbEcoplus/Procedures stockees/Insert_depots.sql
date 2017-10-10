@@ -5,5 +5,14 @@
 	@Qte_limite float,
 	@localisation varchar(50)
 AS
-	INSERT into Depots(IdDepot,Designation,Qte_Stocke,Qte_Limite,Localisation) values(@id,@libelle,@Qte_stocke,@Qte_limite,@localisation)
-RETURN 0
+
+INSERT INTO [dbo].[Depots]
+           ([IdDepot]
+           ,[Designation]
+           ,[Qte_Stocke]
+           ,[Qte_Limite]
+           ,[Localisation])
+     VALUES
+           (@id,@libelle,@Qte_stocke,@Qte_limite,@localisation)
+GO
+
