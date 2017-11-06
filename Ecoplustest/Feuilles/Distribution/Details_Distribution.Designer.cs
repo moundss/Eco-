@@ -112,37 +112,37 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 253);
+            this.label5.Location = new System.Drawing.Point(18, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 13);
-            this.label5.TabIndex = 8;
+            this.label5.TabIndex = 10;
             this.label5.Text = "Date de distribution";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(128, 247);
+            this.dateTimePicker1.Location = new System.Drawing.Point(128, 257);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePicker1.TabIndex = 11;
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(47, 329);
+            this.button1.Location = new System.Drawing.Point(47, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(73, 45);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Enregistrer";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(148, 329);
+            this.button2.Location = new System.Drawing.Point(148, 342);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 45);
-            this.button2.TabIndex = 11;
+            this.button2.TabIndex = 13;
             this.button2.Text = "Fermer";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 386);
+            this.ClientSize = new System.Drawing.Size(267, 399);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);

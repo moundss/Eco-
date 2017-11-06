@@ -27,7 +27,7 @@ namespace Ecoplustest
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            var mnExploitant= new Exploitant();
+            var mnExploitant= new Exploitants();
             mnExploitant.ShowDialog();
         }
 

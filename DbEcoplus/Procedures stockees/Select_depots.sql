@@ -5,6 +5,7 @@ SELECT [IdDepot]
       ,[Qte_Stocke]
       ,[Qte_Limite]
       ,[Localisation]
+	  ,[Semence]
   FROM [dbo].[Depots]
 GO
 

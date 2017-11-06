@@ -8,13 +8,12 @@ namespace Ecoplus.domain.core.Interfaces.Repository
 {
     public interface IDepotRepositories
     {
-        //lister Dépots
-        Task<IEnumerable<DepotDtos>> Listedepot();
+        List<DepotDtos> Listedepot();
         //Enregistrer Dépots
         Task<bool> Enregistrer(Depot mondepot);
         //Modifier dépots
-        Task<bool> Modifier(Guid idDepot, Depot monDepot);
+        Task<bool> Modifier(int idDepot, Depot monDepot);
         //Supprimer Dépots
-        Task<bool> Supprimer(Guid idDepot);
+        Task<bool> Supprimer(int idDepot);
     }
 }

@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[Distribuer]
 (
-	[IdDistribuer] VARCHAR(50) NOT NULL PRIMARY KEY, 
+	[IdDistribuer] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
     [Qte_distribuer] FLOAT NULL, 
-    [Date_distribuer] DATE NULL, 
-    [Id_exploitant] VARCHAR(50) NULL, 
-    [id_depot] VARCHAR(50) NULL
+    [Date_distribuer] DATETIME NULL, 
+    [Id_exploitant] INT NULL, 
+    [id_depot] INT NULL
 )

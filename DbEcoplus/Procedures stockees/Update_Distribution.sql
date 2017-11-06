@@ -1,9 +1,9 @@
 ﻿CREATE PROCEDURE [dbo].[Update_Distribution]
-	@Id_dist varchar(50),
+	@Id_dist int,
 	@qte_distribuer float,
 	@dateDistribuer date,
-	@id_exploitant varchar(50),
-	@id_depot varchar(50)
+	@id_exploitant int,
+	@id_depot int
 AS
 
 UPDATE [dbo].[Distribuer]

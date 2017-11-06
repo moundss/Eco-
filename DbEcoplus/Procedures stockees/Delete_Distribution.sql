@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[Delete_Distribution]
-	@idDistribuer varchar(50)
+	@idDistribuer int
 AS
 
 DELETE FROM [dbo].[Distribuer]

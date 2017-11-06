@@ -2,15 +2,11 @@
 {
     public class DepotDtos
     {
-        public DepotDtos(int id, string libelle, float qte)
-        {
-            Id = id;
-            Libelle = libelle;
-            Qte = qte;
-        }
-
-        public int Id { get; }
-        public string Libelle { get; }
-        public float Qte { get;  }
+        public int IdDepot { get; }
+        public string Designation { get; }
+        public float Qte_Limite { get; }
+        public float Qte_Stocke { get; }
+        public string Localisation { get; }
+        public string Semence { get;}
     }
 }

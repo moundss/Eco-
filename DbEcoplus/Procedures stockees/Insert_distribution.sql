@@ -1,19 +1,18 @@
 ﻿CREATE PROCEDURE [dbo].[Insert_distribution]
-	@Id_dist varchar(50),
+	
 	@qte_distribuer float,
 	@dateDistribuer date,
-	@id_exploitant varchar(50),
-	@id_depot varchar(50)
+	@id_exploitant int,
+	@id_depot int
 AS
 
 INSERT INTO [dbo].[Distribuer]
-           ([IdDistribuer]
-           ,[Qte_distribuer]
+           ([Qte_distribuer]
            ,[Date_distribuer]
            ,[Id_exploitant]
            ,[id_depot])
      VALUES
-           (@Id_dist,@qte_distribuer,@dateDistribuer,@id_exploitant,@id_depot)
+           (@qte_distribuer,@dateDistribuer,@id_exploitant,@id_depot)
 GO
 
 

@@ -4,31 +4,28 @@ namespace Ecoplus.domain.core.Aggregats
 {
     public class Depot
     {
-        //public void Supprimer(int id, Depot monDepot)
-        //{
-        //    if (id!=monDepot.Id)return;
-
-        //}
-        public Depot(Guid id, string libelle, float qte, float qteLimit, string localisation)
+        
+        public Depot( string libelle, float qte, float qteLimit, string localisation, string semence)
         {
-            Id = id;
-            Libelle = libelle;
-            Qte = qte;
-            Qtelimit = qteLimit;
-            Localisation = localisation;
+            Libelle = !string.IsNullOrWhiteSpace(libelle) ? libelle : "inconnu";
+            Qte = qte >= 0 ? qte : 0;
+            Qtelimit = qteLimit>=0? qteLimit:0;
+            Localisation =!string.IsNullOrWhiteSpace(localisation)? localisation:"inconnue";
+            Semence =!string.IsNullOrWhiteSpace(semence)? semence:"inconnue";
         }
 
-        public Guid Id { get; private set; }
+        public int Id { get; private set; }
         public string Libelle { get; private set; }
         public float Qte { get; private set; }
         public float Qtelimit { get;private set; }
         public string Localisation { get; private set; }
-        public Depot Ajout(Guid id, string libelle, float qte, float qteLimit, string localisation)
+        public string Semence { get; private set; }
+        public Depot Ajout( string libelle, float qte, float qteLimit, string localisation, string semence)
         {
-            return new Depot (id,libelle, qte, Qtelimit, Localisation);
+            return new Depot (libelle, qte, Qtelimit, Localisation,semence);
         }
 
-        public void Modifier(Guid id, Depot monDepot)
+        public void Modifier(int id, Depot monDepot)
         {
             if (id != monDepot.Id) return;
 
@@ -36,6 +33,7 @@ namespace Ecoplus.domain.core.Aggregats
             Qte = monDepot.Qte;
             Qtelimit = monDepot.Qtelimit;
             Localisation = monDepot.Localisation;
+            Semence = monDepot.Semence;
         }
     }
 }

@@ -38,6 +38,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -46,6 +49,7 @@
             // 
             // add
             // 
+            this.add.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.add.Location = new System.Drawing.Point(78, 343);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 38);
@@ -56,15 +60,18 @@
             // 
             // update
             // 
+            this.update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.update.Location = new System.Drawing.Point(169, 343);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(75, 38);
             this.update.TabIndex = 2;
             this.update.Text = "Modifier";
             this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // delete
             // 
+            this.delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.delete.Location = new System.Drawing.Point(260, 343);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 38);
@@ -74,6 +81,7 @@
             // 
             // close
             // 
+            this.close.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.close.Location = new System.Drawing.Point(351, 343);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(75, 38);
@@ -94,6 +102,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Depots";
             this.Text = "Depots";
+            this.Load += new System.EventHandler(this.Depots_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
