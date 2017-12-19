@@ -16,14 +16,14 @@ namespace Ecoplustest.Etats {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class exploitants : ReportClass {
+    public class TotalSurface : ReportClass {
         
-        public exploitants() {
+        public TotalSurface() {
         }
         
         public override string ResourceName {
             get {
-                return "exploitants.rpt";
+                return "TotalSurface.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Ecoplustest.Etats {
         
         public override string FullResourceName {
             get {
-                return "Ecoplustest.Etats.exploitants.rpt";
+                return "Ecoplustest.Etats.TotalSurface.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace Ecoplustest.Etats {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace Ecoplustest.Etats {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,33 +82,17 @@ namespace Ecoplustest.Etats {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
-            get {
-                return this.ReportDefinition.Sections[4];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
-            get {
-                return this.ReportDefinition.Sections[5];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.ReportDefinition.Sections[6];
+                return this.ReportDefinition.Sections[4];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedexploitants : Component, ICachedReport {
+    public class CachedTotalSurface : Component, ICachedReport {
         
-        public Cachedexploitants() {
+        public CachedTotalSurface() {
         }
         
         [Browsable(false)]
@@ -145,7 +129,7 @@ namespace Ecoplustest.Etats {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            exploitants rpt = new exploitants();
+            TotalSurface rpt = new TotalSurface();
             rpt.Site = this.Site;
             return rpt;
         }

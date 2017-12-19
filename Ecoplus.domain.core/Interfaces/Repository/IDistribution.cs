@@ -11,9 +11,9 @@ namespace Ecoplus.domain.core.Interfaces.Repository
         //Enregister une distribution
         Task<bool> Enregistrer(Distribuer madist);
         //Modifier une distribution
-        Task<bool> Supprimer(Guid idDist);
+        Task<bool> Supprimer(int idDist);
         //Modifier la distribution
-        Task<bool> Modifier(Guid idDist, Distribuer madist);
+        Task<bool> Modifier(int idDist, Distribuer madist);
             //Lister les Distribution
         Task<IEnumerable<DistribuerDtos>> ListeDistribution();
     }

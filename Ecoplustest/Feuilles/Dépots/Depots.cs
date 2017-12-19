@@ -82,5 +82,17 @@ namespace Ecoplustest.Feuilles
             details.ShowDialog();
             Rafraichir();
         }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow != null) Id = (int) dataGridView1.CurrentRow.Cells[0].Value;
+
+            if (MessageBox.Show(@"Confirmez vous la suppression?", @"Suppression", MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Information) == DialogResult.Cancel) return;
+
+            _depot.Supprimer(Id);
+            
+            Rafraichir();
+        }
     }
 }

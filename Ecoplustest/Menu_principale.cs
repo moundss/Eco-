@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using Ecoplustest.Feuilles;
+using Ecoplustest.Feuilles.Distribution;
 
 namespace Ecoplustest
 {

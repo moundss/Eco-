@@ -47,7 +47,7 @@ namespace Ecoplus.Infrastructure.Repository
             throw new NotImplementedException();
         }
 
-        public async Task<bool> Supprimer(Guid idDist)
+        public async Task<bool> Supprimer(int idDist)
         {
             using (var cnx=new SqlConnection(_strcnx))
             {
@@ -62,7 +62,7 @@ namespace Ecoplus.Infrastructure.Repository
             throw new NotImplementedException();
         }
 
-        public async Task<bool> Modifier(Guid idDist, Distribuer madist)
+        public async Task<bool> Modifier(int idDist, Distribuer madist)
         {
             using (var cnx = new SqlConnection(_strcnx))
             {

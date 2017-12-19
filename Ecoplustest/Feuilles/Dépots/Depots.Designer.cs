@@ -78,6 +78,7 @@
             this.delete.TabIndex = 3;
             this.delete.Text = "Supprimer";
             this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // close
             // 

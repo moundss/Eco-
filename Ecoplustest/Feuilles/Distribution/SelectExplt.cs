@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecoplustest.Feuilles.Distribution
 {
-    public partial class Distribution : Form
+    public partial class SelectExplt : Form
     {
-        public Distribution()
+        public SelectExplt()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var details=new DetailsDistr();
-            details.ShowDialog();
         }
     }
 }

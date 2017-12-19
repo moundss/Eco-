@@ -17,18 +17,7 @@ namespace Ecoplus.Infrastructure.Repository
     public class DepotRepositories : IDepotRepositories
     {
         private readonly string _strcnx = ConfigurationManager.ConnectionStrings["Database:Ecoplus"].ConnectionString;
-       /* public async Task<IEnumerable<DepotDtos>> Listedepot()
-        {
-            using (var cnx=new SqlConnection(_strcnx))
-            {
-                
-                cnx.Open();
-                var result = await cnx.QueryAsync<DepotDtos>("SELECT FROM [dbo].[Depots]", commandType:CommandType.StoredProcedure);
-                
-                return result;
-            }
-            throw new System.NotImplementedException();
-        }*/
+     
 
         public async Task<bool> Enregistrer(Depot mondepot)
         {
@@ -41,7 +30,7 @@ namespace Ecoplus.Infrastructure.Repository
                 param.Add("@Qte_stocke",mondepot.Qte);
                 param.Add("@Qte_limite",mondepot.Qtelimit);
                 param.Add("@localisation",mondepot.Localisation);
-
+                param.Add("@semence", mondepot.Semence);
                 var result = await cnx.ExecuteAsync("Insert_depots",param,commandType:CommandType.StoredProcedure);
                 //var result = await cnx.ExecuteAsync("Insert_depots",param,commandType:CommandType.StoredProcedure);
 
@@ -54,10 +43,10 @@ namespace Ecoplus.Infrastructure.Repository
         {
             using (var cnx=new SqlConnection(_strcnx))
             {
-                var param=new DynamicParameters();
-                param.Add("@idDepot",idDepot);
+                var param = new DynamicParameters();
+                param.Add("@idDepots",idDepot);
                 cnx.Open();
-                var result =await cnx.ExecuteAsync("Delete_depot", param, commandType: CommandType.StoredProcedure);
+                var result =await cnx.ExecuteAsync("Delete_depots", param, commandType: CommandType.StoredProcedure);
                 cnx.Close();
                 return result > 0;
             }

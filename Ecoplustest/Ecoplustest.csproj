@@ -36,8 +36,12 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,11 +53,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Etats\Exploitants.cs">
+    <Compile Include="Etats\Etatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etats\Etatform.Designer.cs">
+      <DependentUpon>Etatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\exploitants.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Exploitants.rpt</DependentUpon>
+      <DependentUpon>exploitants.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\ListeExploitants.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListeExploitants.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\DetailsDistr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\DetailsDistr.Designer.cs">
+      <DependentUpon>DetailsDistr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\Distribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\Distribution.Designer.cs">
+      <DependentUpon>Distribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\SelectExplt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\Distribution\SelectExplt.Designer.cs">
+      <DependentUpon>SelectExplt.cs</DependentUpon>
     </Compile>
     <Compile Include="Feuilles\Dépots\Depots.cs">
       <SubType>Form</SubType>
@@ -67,23 +101,11 @@
     <Compile Include="Feuilles\Dépots\Depots_details.Designer.cs">
       <DependentUpon>Depots_details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Feuilles\Distribution\Details_Distribution.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Feuilles\Distribution\Details_Distribution.Designer.cs">
-      <DependentUpon>Details_Distribution.cs</DependentUpon>
-    </Compile>
     <Compile Include="Feuilles\Exploitant\Details_expl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Feuilles\Exploitant\Details_expl.Designer.cs">
       <DependentUpon>Details_expl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Feuilles\Distribution\Distribution.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Feuilles\Distribution\Distribution.Designer.cs">
-      <DependentUpon>Distribution.cs</DependentUpon>
     </Compile>
     <Compile Include="Feuilles\Exploitant\Exploitant.cs">
       <SubType>Form</SubType>
@@ -99,9 +121,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Etats\Exploitants.rpt">
+    <EmbeddedResource Include="Etats\Etatform.resx">
+      <DependentUpon>Etatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\exploitants.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Exploitants.cs</LastGenOutput>
+      <LastGenOutput>exploitants.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\ListeExploitants.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListeExploitants.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\Distribution\DetailsDistr.resx">
+      <DependentUpon>DetailsDistr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\Distribution\Distribution.resx">
+      <DependentUpon>Distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\Distribution\SelectExplt.resx">
+      <DependentUpon>SelectExplt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feuilles\Dépots\Depots.resx">
       <DependentUpon>Depots.cs</DependentUpon>
@@ -109,14 +147,8 @@
     <EmbeddedResource Include="Feuilles\Dépots\Depots_details.resx">
       <DependentUpon>Depots_details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Feuilles\Distribution\Details_Distribution.resx">
-      <DependentUpon>Details_Distribution.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Feuilles\Exploitant\Details_expl.resx">
       <DependentUpon>Details_expl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Feuilles\Distribution\Distribution.resx">
-      <DependentUpon>Distribution.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feuilles\Exploitant\Exploitant.resx">
       <DependentUpon>Exploitant.cs</DependentUpon>
@@ -161,6 +193,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG\logo-eco-plus5.png" />
+    <Content Include="IMG\NOUVEAU-LOGO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

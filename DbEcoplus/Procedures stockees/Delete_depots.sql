@@ -1,8 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[Delete_depots]
-	@idDepots varchar(50)
+	@idDepots int
 AS
 
-DELETE FROM [dbo].[Depots]
-      WHERE IdDepot=@idDepots
+delete from Depots where IdDepot=@idDepots
 GO
 

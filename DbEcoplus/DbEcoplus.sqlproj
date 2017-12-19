@@ -76,6 +76,7 @@
     <Build Include="Procedures stockees\Delete_depots.sql" />
     <Build Include="Procedures stockees\Update_Distribution.sql" />
     <Build Include="Procedures stockees\Delete_Distribution.sql" />
+    <Build Include="Procedures stockees\SimplExplt.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DbEcoplus.refactorlog" />

@@ -46,6 +46,7 @@
     <Compile Include="Dtos\DepotDtos.cs" />
     <Compile Include="Dtos\DistribuerDtos.cs" />
     <Compile Include="Dtos\ExploitantDtos.cs" />
+    <Compile Include="Dtos\ExploitantSimpleDtos.cs" />
     <Compile Include="Interfaces\Repository\IDepotRepositories.cs" />
     <Compile Include="Interfaces\Repository\IDistribution.cs" />
     <Compile Include="Interfaces\Repository\IExploitantRepositories.cs" />

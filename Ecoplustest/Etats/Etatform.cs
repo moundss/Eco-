@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ecoplustest.Feuilles
+namespace Ecoplustest.Etats
 {
-    public partial class Details_Distribution : Form
+    public partial class Etatform : Form
     {
-        public Details_Distribution()
+        public Etatform()
         {
             InitializeComponent();
         }
