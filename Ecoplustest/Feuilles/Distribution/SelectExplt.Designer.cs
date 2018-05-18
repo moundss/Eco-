@@ -33,11 +33,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.combNature = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.combDistrict = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.combDepartmnt = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -66,16 +66,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.combNature);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.combDistrict);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.combDepartmnt);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 15);
             this.groupBox1.Name = "groupBox1";
@@ -100,13 +99,13 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Nom";
             // 
-            // comboBox3
+            // combNature
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(293, 68);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 1;
+            this.combNature.FormattingEnabled = true;
+            this.combNature.Location = new System.Drawing.Point(293, 68);
+            this.combNature.Name = "combNature";
+            this.combNature.Size = new System.Drawing.Size(121, 21);
+            this.combNature.TabIndex = 1;
             // 
             // label3
             // 
@@ -117,13 +116,13 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Nature";
             // 
-            // comboBox2
+            // combDistrict
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(293, 19);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 1;
+            this.combDistrict.FormattingEnabled = true;
+            this.combDistrict.Location = new System.Drawing.Point(293, 19);
+            this.combDistrict.Name = "combDistrict";
+            this.combDistrict.Size = new System.Drawing.Size(121, 21);
+            this.combDistrict.TabIndex = 1;
             // 
             // label2
             // 
@@ -134,13 +133,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "District";
             // 
-            // comboBox1
+            // combDepartmnt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(80, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(161, 21);
-            this.comboBox1.TabIndex = 1;
+            this.combDepartmnt.FormattingEnabled = true;
+            this.combDepartmnt.Location = new System.Drawing.Point(80, 19);
+            this.combDepartmnt.Name = "combDepartmnt";
+            this.combDepartmnt.Size = new System.Drawing.Size(161, 21);
+            this.combDepartmnt.TabIndex = 1;
+            this.combDepartmnt.SelectedIndexChanged += new System.EventHandler(this.combDepartmnt_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -161,6 +161,7 @@
             this.Controls.Add(this.button1);
             this.Name = "SelectExplt";
             this.Text = "SelectExplt";
+            this.Load += new System.EventHandler(this.SelectExplt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -175,11 +176,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox combNature;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox combDistrict;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combDepartmnt;
         private System.Windows.Forms.Label label1;
     }
 }
